@@ -24,20 +24,7 @@
 		<link rel="icon" type="image/png" href="/img/icons/favicon-128.png" sizes="128x128" />
 		<link rel="icon" type="image/png" href="/img/icons/favicon-196x196.png" sizes="196x196" />
 
-		<meta property="og:image" content="{{ .Site.BaseURL }}/img/icons/apple-icon-precomposed.png">
-		<meta property="og:title" content="Richard Kapička">
-		<meta property="og:description" content="PHP Developer, RoR Developer, Python Developer">
-		<meta property="og:url" content="{{ .Permalink }}">
-		<meta property="og:site_name" content="Richard Kapička">
-		<meta property="og:type" content="profile">
-
-		<meta name="twitter:image" content="{{ .Site.BaseURL }}/img/icons/apple-icon-precomposed.png">
-		<meta name="twitter:site" content="@RichardKapicka">
-		<meta name="twitter:description" content="PHP Developer, RoR Developer, Python Developer">
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Richard Kapička">
-
-		<link rel="stylesheet" href="/webtemp/bundle.css?{{ readFile "/static/webtemp/bundle.css" | md5}}">
+		<link rel="stylesheet" href="/css/main.less?{{ readFile "/static/css/main.less" | md5}}" />
 	</head>
 	<body>
 		<div class="top-line"></div>
@@ -46,6 +33,6 @@
 			{{ block "main" .}}{{ end }}
 		</div>
 
-		<script src="/webtemp/bundle.js?{{ readFile "/static/webtemp/bundle.js" | md5}}"></script>
+		<script src="/js/main.js?{{ readFile "/static/js/main.js" | md5}}" type="module"></script>
 	</body>
 </html>

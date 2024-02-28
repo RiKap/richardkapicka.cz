@@ -1,21 +1,26 @@
 {
+	"type": "module",
 	"dependencies": {
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"gulp": "^4.0.2",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-htmlmin": "^5.0.1",
-		"gulp-less": "^5.0.0",
-		"gulp-terser": "^2.1.0",
-		"gulp-watch": "^5.0.1",
-		"minimist": ">=1.2.8"
+		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@types/node": "^20.11.20",
+		"less": "^4.2.0",
+		"prettier": "^3.2.5",
+		"prettier-plugin-organize-imports": "^3.2.4",
+		"typescript": "^5.3.3",
+		"vite": "^5.1.4",
+		"vite-hugo-plugin": "^5.1.0",
+		"vite-plugin-minify": "^1.5.2"
 	},
 	"scripts": {
-		"css": "gulp css",
-		"js": "gulp js",
-		"html": "gulp html",
-		"watch": "gulp watch"
+		"build": "npm run build:dev",
+		"build:prod": "npm run build:hugo && npm run build:vite",
+		"build:dev": "npm run build:hugo && npm run build:vite && npm run build:cleanup",
+		"build:hugo": "hugo -d public",
+		"build:vite": "vite build --outDir public",
+		"build:cleanup": "rm -rf public/{css,js,img}",
+		"vite:preview": "npm run build && vite preview"
 	}
 }

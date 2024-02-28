@@ -22,12 +22,8 @@ jobs:
 
       - name: Build website
         run: |
-          npm run css
-          npm run js
-          hugo
-          npm run html
-          echo "/css/*" >> public/.gitignore
-          echo "/js/*" >> public/.gitignore
+          npm run build:prod && \
+          rm -rf ./public/{css,js,img}/*
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3

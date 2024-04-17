@@ -10,7 +10,7 @@
 		"prettier": "^3.2.5",
 		"prettier-plugin-organize-imports": "^3.2.4",
 		"typescript": "^5.4.5",
-		"vite": "^5.2.8",
+		"vite": "^5.2.9",
 		"vite-hugo-plugin": "^5.1.0",
 		"vite-plugin-minify": "^1.5.2"
 	},

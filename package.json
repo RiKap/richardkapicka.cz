@@ -7,7 +7,7 @@
 		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
 		"@types/node": "^24.0.4",
 		"less": "^4.3.0",
-		"prettier": "^3.6.0",
+		"prettier": "^3.6.1",
 		"prettier-plugin-organize-imports": "^4.1.0",
 		"typescript": "^5.8.3",
 		"vite": "^7.0.0",

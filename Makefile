@@ -6,7 +6,7 @@ PRETTIER_PATTERN='**/*.{css,js,jsx,less,ts,tsx}'
 .PHONY: help
 help: ## Show this help
 	@printf "\033[33mAvailable commands:\033[0m\n"
-	@grep -E '^[\sa-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-25s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[\sa-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-25s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: prettierfixer
 prettierfixer: ## Fix JS & CSS code style

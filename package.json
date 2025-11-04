@@ -4,7 +4,7 @@
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@trivago/prettier-plugin-sort-imports": "^6.0.0",
 		"@types/node": "^24.10.0",
 		"less": "^4.4.2",
 		"prettier": "^3.6.2",

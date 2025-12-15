@@ -5,7 +5,7 @@
 	},
 	"devDependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^6.0.0",
-		"@types/node": "^25.0.0",
+		"@types/node": "^25.0.2",
 		"less": "^4.5.1",
 		"prettier": "^3.7.4",
 		"prettier-plugin-organize-imports": "^4.3.0",
